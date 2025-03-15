@@ -1,0 +1,378 @@
+/* 이미지 url, height 변경 */
+.promo-banner01{
+    position: relative;
+    height: 920px;
+    background: url(https://www.nplus.co.kr/data/promotion/pc/shoe_250310/d_250310_shoe_01_01.jpg) center no-repeat ;
+}
+.promo-banner02{
+    position: relative;
+    height: 1550px;
+    background: url(https://www.nplus.co.kr/data/promotion/pc/shoe_250310/d_250310_shoe_02_02.jpg) center no-repeat ;
+}
+.promo-banner03{
+    position: relative;
+    height: 1120px;
+    background: url(https://www.nplus.co.kr/data/promotion/pc/shoe_250310/d_250310_shoe_03.jpg) center no-repeat ;
+}
+.promo-banner04{
+    position: relative;
+    height: 710px;
+    background: url(https://www.nplus.co.kr/data/promotion/pc/shoe_250310/d_250310_shoe_04.jpg) center no-repeat ;
+}
+.promo-banner05{
+    position: relative;
+    height: 3020px;
+    background: url(https://www.nplus.co.kr/data/promotion/pc/shoe_250310/d_250310_shoe_05.jpg) center no-repeat ;
+}
+.promo-banner06{
+    position: relative;
+    height: 1400px;
+    background: url(https://www.nplus.co.kr/data/promotion/pc/shoe_250310/d_250310_shoe_06_01.jpg) center no-repeat ;
+}
+.promo-banner07{
+    position: relative;
+    height: 690px;
+    background: url(https://www.nplus.co.kr/data/promotion/pc/shoe_250310/d_250310_shoe_07_02.jpg) center no-repeat ;
+}
+.promo-banner08{
+    position: relative;
+    height: 1050px;
+    background: url(https://www.nplus.co.kr/data/promotion/pc/shoe_250310/d_250310_shoe_08_01.jpg) center no-repeat ;
+}
+.promo-banner09{
+    position: relative;
+    height: 660px;
+    background: url(https://www.nplus.co.kr/data/promotion/pc/shoe_250310/d_250310_shoe_09_02.jpg) center no-repeat ;
+}
+
+/* 텍스트 나오는거 효과 이중에 하나 넣으면 됨 밑에 css랑 클래스 수정 */
+/* 
+    .fadeIn {animation: fadeIn 1s forwards;}
+    .shaking {animation: shaking 1s forwards;}
+    .upDown {animation: upDown 1s forwards;}
+    .showUp {animation: showUp 1s forwards;}
+    .showDown {animation: showDown 1s forwards;}
+    .showLeft {animation: showLeft 1s forwards;}
+    .showRight {animation: showRight 1s forwards;}
+    */
+@keyframes fadeIn {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes shaking {
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(5deg);}
+    50%{transform: rotate(2deg);}
+    75%{transform: rotate(3deg);}
+    100%{transform: rotate(0deg);}
+}
+@keyframes upDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(calc(-10 / 780 * 100vw));
+    }
+}
+@keyframes showUp {
+    0% {
+        opacity: 0;
+        transform: translateY(calc(40 / 780 * 100vw));
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+} 
+@keyframes showDown {
+    0% {
+        opacity: 0;
+        transform: translateY(calc(-40 / 780 * 100vw));
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+} 
+@keyframes showLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(calc(100 / 780 * 100vw));
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes showRight {
+    0% {
+        opacity: 0;
+        transform: translateX(calc(-100 / 780 * 100vw));
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* 텍스트 나오는거 css */
+.motion-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* 아까 고른 효과 적용하는 곳 */
+.motion-box.on .fadeIn {animation: fadeIn 1s forwards;}
+.motion-box.on .showDown {animation: showDown 1s forwards;}
+
+/* 넣을 이미지 url, txt## 클래스명 수정하는 곳 */
+.motion-box .txt01 {background: url("https://www.nplus.co.kr/data/promotion/pc/shoe_250310/d_250310_shoe_01_txt.png") center no-repeat;}
+.motion-box .txt02 {background: url("https://www.nplus.co.kr/data/promotion/pc/shoe_250310/d_250310_shoe_01_model.png") center no-repeat;}
+.motion-box .txt03 {background: url("https://www.nplus.co.kr/data/promotion/pc/shoe_250310/d_250310_shoe_02_txt_02.png") center no-repeat;}
+.motion-box .txt04 {background: url("https://www.nplus.co.kr/data/promotion/pc/shoe_250310/d_250310_shoe_03_s01.png") center no-repeat;}
+.motion-box .txt05 {background: url("https://www.nplus.co.kr/data/promotion/pc/shoe_250310/d_250310_shoe_03_s02.png") center no-repeat;}
+.motion-box .txt06 {background: url("https://www.nplus.co.kr/data/promotion/pc/shoe_250310/d_250310_shoe_03_s03.png") center no-repeat;}
+.motion-box .txt07 {background: url("https://www.nplus.co.kr/data/promotion/pc/shoe_250310/d_250310_shoe_03_s04.png") center no-repeat;}
+.motion-box .txt08 {background: url("https://www.nplus.co.kr/data/promotion/pc/shoe_250310/d_250310_shoe_05_s01.png") center no-repeat;}
+.motion-box .txt09 {background: url("https://www.nplus.co.kr/data/promotion/pc/shoe_250310/d_250310_shoe_05_s02.png") center no-repeat;}
+.motion-box .txt10 {background: url("https://www.nplus.co.kr/data/promotion/pc/shoe_250310/d_250310_shoe_05_s03.png") center no-repeat;}
+.motion-box .txt11 {background: url("https://www.nplus.co.kr/data/promotion/pc/shoe_250310/d_250310_shoe_05_s04.png") center no-repeat;}
+.motion-box .txt12 {background: url("https://www.nplus.co.kr/data/promotion/pc/shoe_250310/d_250310_shoe_06_s01.png") center no-repeat;}
+.motion-box .txt13 {background: url("https://www.nplus.co.kr/data/promotion/pc/shoe_250310/d_250310_shoe_06_s02.png") center no-repeat;}
+.motion-box .txt14 {background: url("https://www.nplus.co.kr/data/promotion/pc/shoe_250310/d_250310_shoe_06_s03.png") center no-repeat;}
+.motion-box > div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 1s;
+    transition-delay: 0.8s;
+}
+
+/* 딜레이 조정하는 곳 */
+.del1 {animation-delay: .2s !important;}
+.del2 {animation-delay: .4s !important;}
+.del3 {animation-delay: .6s !important;}
+.del4 {animation-delay: .8s !important;}
+.del5 {animation-delay: 1s !important;}
+.del6 {animation-delay: 1.2s !important;}
+.del7 {animation-delay: 1.4s !important;}
+.del8 {animation-delay: 1.6s !important;}
+.del9 {animation-delay: 2s !important;}
+
+@keyframes floating {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(-20px);}
+}
+@keyframes floating2 {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(20px);}
+}
+.effect_box_wrap{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.effect_box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.effect{
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+}
+.effect_box .floating {animation: floating 0.8s infinite alternate;}
+.effect_box .floating2 {animation: floating2 0.8s infinite alternate;}
+.effect01{
+    transform: translateX(-100px);
+    top: 22px;
+}
+.effect02{
+    transform: translateX(585px);
+    bottom: 254px;
+}
+.effect03{
+    transform: translateX(-655px);
+    top: 795px;
+}
+.effect04{
+    transform: translateX(-1093px);
+    bottom: 420px;
+}
+.promo-banner01{
+    overflow: hidden;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+/* 비디오 넣는거 있을 때 */
+.promo_img_box{
+    position: absolute;
+    display: flex;
+    top: 259px;
+    left: 50%;
+    transform: translate(-50%);
+    gap: 25px;
+}
+.promo_img_box .promo_img{
+    position: relative;
+    width: 450px;
+    height: 380px;
+    overflow: hidden;
+}
+.promo_img_box .promo_img:after{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    pointer-events: none;
+}
+.promo_img_box .promo_img_bg{
+    transition: transform 0.3s ease 0s;
+}
+.promo_img_box .promo_img_bg:hover{
+    transform: scale(1.3);
+}
+.promo_img_box .promo_img_cover{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+.promo_img_box02{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.promo_img_box02 .promo_img{
+    position: absolute;
+    left: 50%;
+}
+.promo_img_box02 .promo_img_04{
+    transform: translateX(-100%);
+    top: 80px;
+}
+.promo_img_box02 .promo_img_05{
+    top: 800px;
+}
+.promo_img_box02 .promo_img_06{
+    transform: translateX(-100%);
+    top: 1520px;
+}
+.promo_img_box02 .promo_img_07{
+    top: 2240px;
+}
+.promo_link_box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.promo_link_box .link{
+    position: absolute;
+    width: 264px;
+    height: 264px;
+    top: 165px;
+    left: 50%;
+    overflow: hidden;
+}
+.promo_link_box .link01{
+    transform: translateX(-701px);
+}
+.promo_link_box .link02{
+    transform: translateX(-416px);
+}
+.promo_link_box .link03{
+    transform: translateX(-132px);
+}
+.promo_link_box .link04{
+    transform: translateX(152px);
+}
+.promo_link_box .link05{
+    transform: translateX(436px);
+}
+.promo_link_box .link06{
+    transform: translateX(-700px);
+    top: 645px;
+}
+.promo_link_box .link07{
+    transform: translateX(50px);
+    top: 645px;
+}
+.promo_link_box .link img{
+    transition: transform 0.2s ease 0s;
+}
+.promo_link_box .link img:hover{
+    transform: scale(1.1);
+}
+
+/* 슬라이드 */
+
+.swiper-btn-prev, .swiper-btn-next {
+    position: absolute;
+    z-index: 10;
+    top: 614px;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+.swiper-btn-prev {
+    transform: translateX(-800px);
+    background: url(https://www.nplus.co.kr/data/promotion/pc/shoe_250310/d_250310_shoe_02_sl_prev.png) center / contain no-repeat;
+}
+.swiper-btn-next {
+    transform: translateX(720px);
+    background: url(https://www.nplus.co.kr/data/promotion/pc/shoe_250310/d_250310_shoe_02_sl_next.png) center / contain no-repeat;
+}
+.video_slide_wrap{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.video_slide_box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.promo_video_slide{
+    position: absolute;
+    top: 260px;
+    left: 50%;
+    overflow: hidden;
+    padding-bottom: 28px;
+    transform: translateX(-50%);
+}
+.swiper-scrollbar{
+    height: 3px;
+    width: 400px;
+}
+.promo_video_slide .swiper-wrapper{
+    width: 1400px;
+    height: 787.5px;
+    pointer-events: none;
+}
+.promo_video_slide .swiper-slide{
+    width: 100%;
+    height: 100%;
+}
+.promo-video{
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,551 @@
+
+<!DOCTYPE html>
+ <html class="no-js" lang="ko-KR"> <!--<![endif]-->
+<head>
+
+
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<title></title><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">	
+
+
+	
+
+<link rel="stylesheet" href="https://www.keds.co.kr/mo/resource/css/normalize.css">
+<link rel="stylesheet" href="https://www.keds.co.kr/mo/resource/css/opt-default.css">
+<link rel="stylesheet" href="https://www.keds.co.kr/mo/resource/css/slick.css">
+<link rel="stylesheet" href="https://www.keds.co.kr/mo/resource/css/layout.css?v=202101121600">
+<link rel="stylesheet" href="https://www.keds.co.kr/mo/resource/css/product.css?v=202101051743">
+<link rel="stylesheet" href="https://www.keds.co.kr/mo/resource/css/sub.css?v=202101061810">
+
+
+<script src="https://www.keds.co.kr/mo/resource/js/lib/greensock/TweenMax.min.js"></script>
+<script src="https://www.keds.co.kr/mo/resource/js/lib/modernizr.custom.js"></script>
+<script src="https://www.keds.co.kr/mo/resource/js/lib/jquery-1.12.4.min.js"></script>
+<script src="https://www.keds.co.kr/mo/resource/js/lib/mighty.base.1.5.7.min.js"></script>
+<script src="https://www.keds.co.kr/mo/resource/js/lib/mighty.sort.1.3.0.min.js"></script>
+<script src="https://www.keds.co.kr/mo/resource/js/lib/matizCoverLayer.3.1.0.min.js"></script>
+<script src="https://www.keds.co.kr/mo/resource/js/lib/easing-1.3.min.js"></script>
+<script src="https://www.keds.co.kr/mo/resource/js/lib/slick.min.js"></script>
+<script src="https://www.keds.co.kr/mo/resource/js/lib/sly.min.js"></script>
+<script src="https://www.keds.co.kr/mo/resource/js/lib/matizResizeMap.1.0.0.min.js"></script>
+
+<script src="https://www.keds.co.kr/mo/resource/js/pages/default_test.js?v=2021010401"></script>
+<script src="https://www.nplus.co.kr//resource/js/lib/scrollmagic/ScrollMagic.js"></script>
+
+	
+
+	<!-- 개별 css, js -->
+
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
+</head>
+<body class="hd__style _tit fix-share">
+	<!-- start of :: wrap -->
+	<div id="wrap">
+        
+<div class="bg__wrap"></div>
+
+
+		<!-- start of :: contents -->
+		<div id="contents" class="favorites">
+			<section class="favorites-box">
+				
+				
+				<!-- collection -->	
+				<div class="collection-box">
+					<div class="collection_view__con">
+						
+						<!-- 에디터 영역 -->
+						
+                        <style>
+                            .promo-banner {
+                                position: relative;
+                                overflow: hidden;
+                                background: rgb(255, 255, 255);
+                            }
+                            .promo-banner img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                            @keyframes fadeIn {
+                                0%{opacity: 0;}
+                                100%{opacity: 1;}
+                            }
+                            @keyframes showUp {
+                                0% {
+                                    opacity: 0;
+                                    transform: translateY(calc(40 / 780 * 100vw));
+                                }
+                                100% {
+                                    opacity: 1;
+                                    transform: translateY(0px);
+                                }
+                            } 
+                            @keyframes showDown {
+                                0% {
+                                    opacity: 0;
+                                    transform: translateY(calc(-40 / 780 * 100vw));
+                                }
+                                100% {
+                                    opacity: 1;
+                                    transform: translateY(0px);
+                                }
+                            } 
+                            .motion-box{
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                            }
+                            .motion-box.on .fadeIn {animation: fadeIn 1s forwards;}
+                            .motion-box.on .showUp {animation: showUp 1s forwards;}
+                            .motion-box.on .showDown {animation: showDown 1s forwards;}
+                            .effect_box .showDown {animation: showDown 1s forwards;}
+                            .motion-box > div{
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                opacity: 0;
+                                transition: all 1s;
+                                transition-delay: 0.8s;
+                            }
+                            .del1 {animation-delay: .2s !important;}
+                            .del2 {animation-delay: .4s !important;}
+                            .del3 {animation-delay: .6s !important;}
+                            .del4 {animation-delay: .8s !important;}
+                            .del5 {animation-delay: 1s !important;}
+                            .del6 {animation-delay: 1.2s !important;}
+                            .del7 {animation-delay: 1.4s !important;}
+                            .del8 {animation-delay: 1.6s !important;}
+                            .del11 {animation-delay: .2s !important;}
+                            .del12 {animation-delay: .7s !important;}
+                            .del13 {animation-delay: 1.2s !important;}
+                            .del14 {animation-delay: 1.7s !important;}
+                            .del15 {animation-delay: 2.2s !important;}
+                            .del16 {animation-delay: 2.7s !important;}
+                            .del17 {animation-delay: 3.2s !important;}
+                            .del18 {animation-delay: 3.7s !important;}
+                            .effect_box_wrap{
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                width: 100%;
+                                height: 100%;
+                            }
+                            .effect_box{
+                                position: relative;
+                                width: 100%;
+                                height: 100%;
+                            }
+                            .effect{
+                                position: absolute;
+                                z-index: 0;
+                                left: 50%;
+                            }
+                            @keyframes floating {
+                                0% {transform: translateY(0);}
+                                100% {transform: translateY(-20px);}
+                            }
+                            @keyframes floating2 {
+                                0% {transform: translateY(0);}
+                                100% {transform: translateY(20px);}
+                            }
+                            .effect_box .floating {animation: floating 0.8s infinite alternate;}
+                            .effect_box .floating2 {animation: floating2 0.8s infinite alternate;}
+                            .effect01{
+                                top: calc(373 / 780 * 100vw);
+                                transform: translateX(calc(-400 / 780 * 100vw));
+                                width: calc(450 / 780 * 100vw);
+                            }
+                            .effect02{
+                                top: calc(189 / 780 * 100vw);
+                                transform: translateX(calc(150 / 780 * 100vw));
+                                width: calc(618 / 780 * 100vw);
+                            }
+                            .effect03{
+                                top: calc(1128 / 780 * 100vw);
+                                transform: translateX(calc(-428 / 780 * 100vw));
+                                width: calc(243 / 780 * 100vw);
+                            }
+                            .effect04{
+                                bottom: calc(1071 / 780 * 100vw);
+                                transform: translateX(calc(-533 / 780 * 100vw));
+                                width: calc(563 / 780 * 100vw);
+                            }
+                            .promo-video{
+                                position: absolute;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                width: calc(720 / 780 * 100vw);
+                                height: calc(405 / 780 * 100vw);
+                                top: calc(285 / 780 * 100vw);
+                                pointer-events: none;
+                            }
+                            .mySwiper {width: 100%;}
+                            .promo-banner03 .swiper-wrapper {
+                                position: absolute;
+                                z-index: 100;
+                                transition-timing-function: linear;
+                                width: 100%;
+                                height: auto;
+                                top: calc(60 / 780 * 100vw);
+                            }
+                            .promo-banner03 .swiper-wrapper .swiper-slide{
+                                width: calc(415 / 780 * 100vw);
+                                height: calc(570 / 780 * 100vw);
+                            }
+                            .promo-banner03 .swiper-wrapper img{
+                                object-fit: contain;
+                            }
+                            .effect_box_wrap{
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                            }
+                            .effect_box{
+                                position: relative;
+                                width: 100%;
+                                height: 100%;
+                            }
+                            .effect_box .showDown{
+                                opacity: 0;
+                            }
+                            .effect_img{
+                                position: absolute;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                width: calc(660 / 780 * 100vw);
+                                height: calc(660 / 780 * 100vw);
+                            }
+                            .effect_txt{
+                                position: absolute;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                width: calc(660 / 780 * 100vw);
+                            }
+                            .effect05{
+                                top: calc(79 / 780 * 100vw);
+                            }
+                            .effect06{
+                                top: calc(739 / 780 * 100vw);
+                                height: calc(510 / 780 * 100vw);
+                            }
+                            .effect07{
+                                top: calc(1280 / 780 * 100vw);
+                            }
+                            .effect08{
+                                top: calc(1940 / 780 * 100vw);
+                                height: calc(460 / 780 * 100vw);
+                            }
+                            .effect09{
+                                bottom: calc(1786 / 780 * 100vw);
+                            }
+                            .effect10{
+                                bottom: calc(1317 / 780 * 100vw);
+                                height: calc(470 / 780 * 100vw);
+                            }
+                            .effect11{
+                                bottom: calc(631 / 780 * 100vw);
+                            }
+                            .effect12{
+                                bottom: calc(81 / 780 * 100vw);
+                                height: calc(550 / 780 * 100vw);
+                            }
+
+                            .slide-list-box {
+                                position: absolute;
+                                top: calc(147 / 780 * 100vw);
+                                padding: 0 calc(60 / 780 * 100vw);
+                                left: 50%;
+                                transform: translateX(-50%);
+                                width: 100%;
+                                box-sizing: border-box;
+                                overflow: hidden;
+                            }
+                            .slide-list-box .sl-goods-list {
+                                width: 100%;
+                            }
+                            .slide-list-box .sl-goods {
+                                position: relative;
+                                margin-right: calc(20 / 780 * 100vw);
+                                width: calc(300 / 780 * 100vw);
+                                height: calc(374 / 780 * 100vw);
+                            }
+                            .slide-list-box .sl-goods:last-child {margin-right: 0;}
+                            .product_box{
+                                position: absolute;
+                                top: calc(648 / 780 * 100vw);
+                                padding: 0 calc(60 / 780 * 100vw);
+                                width: 100%;
+                                box-sizing: border-box;
+                                display: flex;
+                                justify-content: space-between;
+                            }
+                            .product_box > div{
+                                width: calc(300 / 780 * 100vw);
+                                height: calc(381 / 780 * 100vw);
+                            }
+                        </style>
+
+                        <div class="promo-banner01 promo-banner">
+                            <img src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_01.jpg" alt="1번이미지">
+                            <div class="motion-box01 motion-box">
+                                <div class="txt01 fadeIn del1" style="z-index: 1;">
+                                    <img src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_01_txt.png" alt="1번이미지 텍스트">
+                                </div>
+                                <div class="txt02" style="opacity: 1; z-index: 1;">
+                                    <img src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_01_model.png" alt="1번이미지 텍스트">
+                                </div>
+                            </div>
+                            <div class="effect_box_wrap">
+                                <div class="effect_box">
+                                    <div class="effect effect01">
+                                        <img class="floating2 del1" src="https://www.nplus.co.kr/data/promotion/pc/shoe_250310/d_250310_shoe_01_motion_01.png" alt="">
+                                    </div>
+                                    <div class="effect effect02">
+                                        <img class="floating del7" src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_01_motion_02_01.png" alt="">
+                                    </div>
+                                    <div class="effect effect03">
+                                        <img class="floating2 del3" src="https://www.nplus.co.kr/data/promotion/pc/shoe_250310/d_250310_shoe_01_motion_03.png" alt="">
+                                    </div>
+                                    <div class="effect effect04">
+                                        <img class="floating del5" src="https://www.nplus.co.kr/data/promotion/pc/shoe_250310/d_250310_shoe_01_motion_04.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promo-banner02 promo-banner">
+                            <img src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_02_01.jpg" alt="2번이미지">
+                            <div class="motion-box02 motion-box">
+                                <div class="txt03 fadeIn del1">
+                                    <img src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_02_txt.png" alt="1번이미지 텍스트">
+                                </div>
+                            </div>
+                            <!-- <div class="promo-video">
+                                <iframe 
+                                    width="100%" 
+                                    height="100%" 
+                                    src="https://www.youtube.com/embed/R6AH1DHr6sk?autoplay=1&mute=1&controls=0&playsinline=1&modestbranding=1&disablekb=1&fs=0&cc_load_policy=0&loop=1&playlist=R6AH1DHr6sk" 
+                                    title="YouTube video player" 
+                                    frameborder="0" 
+                                    allow="autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                                    referrerpolicy="strict-origin-when-cross-origin">
+                                </iframe>
+                            </div> -->
+                        </div>
+                        <div class="promo-banner03 promo-banner swiper mySwiper auto-slide-box">
+                            <img src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_03.jpg" alt="3번이미지">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <img src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_03_s01.jpg" alt="1-1번슬라이드">
+                                </li>
+                                <li class="swiper-slide">
+                                    <img src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_03_s02.jpg" alt="1-2번슬라이드">
+                                </li>
+                                <li class="swiper-slide">
+                                    <img src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_03_s03.jpg" alt="1-3번슬라이드">
+                                </li>
+                                <li class="swiper-slide">
+                                    <img src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_03_s04.jpg" alt="1-4번슬라이드">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="promo-banner04 promo-banner">
+                            <img src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_04.jpg" alt="4번이미지">
+                            <div class="motion-box03 motion-box">
+                                <div class="txt04 showDown del1">
+                                    <img src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_04_s01.png" alt="">
+                                </div>
+                                <div class="txt05 showDown del4">
+                                    <img src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_04_s02.png" alt="">
+                                </div>
+                                <div class="txt06 showDown del7">
+                                    <img src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_04_s03.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promo-banner05 promo-banner">
+                            <img src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_05.jpg" alt="5번이미지">
+                            <div class="effect_box_wrap">
+                                <div class="effect_box">
+                                    <div class="effect_img effect05">
+                                        <img class="showDown del11" src="https://www.nplus.co.kr/data/promotion/pc/shoe_250310/d_250310_shoe_05_s01_img_01.gif" alt="">
+                                    </div>
+                                    <div class="effect_txt effect06">
+                                        <img class="showDown del12" src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_05_s02.jpg" alt="">
+                                    </div>
+                                    <div class="effect_img effect07 ">
+                                        <img class="showDown del13" src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_05_s03.jpg" alt="">
+                                    </div>
+                                    <div class="effect_txt effect08 ">
+                                        <img class="showDown del14" src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_05_s04.jpg" alt="">
+                                    </div>
+                                    <div class="effect_img effect09  ">
+                                        <img class="showDown del15" src="https://www.nplus.co.kr/data/promotion/pc/shoe_250310/d_250310_shoe_05_s03_img_01.gif" alt="">
+                                    </div>
+                                    <div class="effect_txt effect10 ">
+                                        <img class="showDown del16" src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_05_s06.jpg" alt="">
+                                    </div>
+                                    <div class="effect_img effect11 ">
+                                        <img class="showDown del17" src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_05_s07.jpg" alt="">
+                                    </div>
+                                    <div class="effect_txt effect12 ">
+                                        <img class="showDown del18" src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_05_s08.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promo-banner06 promo-banner">
+                            <img src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_06.jpg" alt="6번이미지">
+                        </div>
+                        <div class="promo-banner07 promo-banner">
+                            <img src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_07.jpg" alt="7번이미지">
+                            <div class="motion-box04 motion-box">
+                                <div class="txt07 showDown del1">
+                                    <img src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_07_s01.png" alt="">
+                                </div>
+                                <div class="txt08 showDown del4">
+                                    <img src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_07_s02.png" alt="">
+                                </div>
+                                <div class="txt09 showDown del7">
+                                    <img src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_07_s03.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promo-banner08 promo-banner">
+                            <img src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_08_02.jpg" alt="8번이미지">
+                        </div>
+                        <div class="promo-banner09 promo-banner">
+                            <img src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_09.jpg" alt="9번이미지">
+                            <div class="slide-list-box">
+                                <div class="sl-goods-list swiper-wrapper">
+                                    <div class="sl-goods swiper-slide">
+                                        <a href="/product/view.asp?pno=39287">
+                                            <img src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_09_s01.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="sl-goods swiper-slide">
+                                        <a href="/product/view.asp?pno=39288">
+                                            <img src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_09_s02.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="sl-goods swiper-slide">
+                                        <a href="/product/view.asp?pno=39298">
+                                            <img src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_09_s03.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="sl-goods swiper-slide">
+                                        <a href="/product/view.asp?pno=39299">
+                                            <img src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_09_s04.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="sl-goods swiper-slide">
+                                        <a href="/product/view.asp?pno=39300">
+                                            <img src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_09_s05.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_box">
+                                <div class="product01" style="pointer-events: none;">
+                                    <a href="#">
+                                        <img src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_09_s06.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="product02">
+                                    <a href="/product/view.asp?pno=39284">
+                                        <img src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_09_s07.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promo-banner10 promo-banner">
+                            <img src="https://www.nplus.co.kr/data/promotion/mo/shoe_250310/m_250310_shoe_10_02.jpg" alt="10번이미지">
+                        </div>
+    
+                        <script>
+                            function gotoScroll(val){
+                                var offsetVal = $(val).offset().top;
+                                $("body, html").animate({scrollTop:offsetVal},500);
+                            };
+                            document.addEventListener("DOMContentLoaded",function () {
+                                // 글자 나오게 하기
+                                var controller = new ScrollMagic.Controller();
+                                var num = document.querySelectorAll(".motion-box").length;
+                                for(let i = 1; i <= num; i++){
+                                    var promoBanner = new ScrollMagic.Scene({
+                                        triggerElement:".motion-box0"+ i,
+                                        duration: 0,
+                                        triggerHook: 0.7,
+                                        reverse: false,
+                                        offset: 0
+                                    })
+                                    .setClassToggle(".motion-box0"+ i,"on")
+                                    .addTo(controller);
+                                }
+                                function gotoScroll(val){
+                                    var offsetVal = $(val).offset().top;
+                                    $("body, html").animate({scrollTop:offsetVal},500);
+                                };
+                                var swiper = new Swiper('.auto-slide-box', {
+                                    speed: 3000,
+                                    slidesPerView: 'auto',
+                                    autoplay: {
+                                        delay: 0,
+                                        disableOnInteraction: false
+                                    },
+                                    loop: true,
+                                    allowTouchMove: false,
+                                    spaceBetween: 10,
+                                });
+                                var promoSlide = new Swiper(".slide-list-box", {
+                                    speed: 1000,
+                                    slidesPerView: 'auto',
+                                    //freeMode: true,
+                                    autoplay: {
+                                        delay: 2000,
+                                        disableOnInteraction: false
+                                    },
+                                });
+                            })
+                        </script>
+
+						<!-- //에디터 영역 -->
+                        <div id="goodsBot"></div>
+							
+					</div>
+
+					
+				</div>				
+				<!-- //collection -->
+				
+				
+			</section>		
+			
+			
+		
+		</div>
+		<!-- // end of :: contents -->
+
+
+
+
+		
+
+    <!-- // end of :: wrap -->    
+</body>
+</html>
+					
+
+    
